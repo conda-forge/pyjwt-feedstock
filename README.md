@@ -1,7 +1,7 @@
 About pyjwt
 ===========
 
-Home: http://github.com/jpadilla/pyjwt
+Home: https://github.com/jpadilla/pyjwt
 
 Package license: MIT
 
@@ -10,6 +10,18 @@ Feedstock license: BSD 3-Clause
 Summary: JSON Web Token implementation in Python
 
 
+
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyjwt-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyjwt-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyjwt-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyjwt-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyjwt-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyjwt-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyjwt/badges/version.svg)](https://anaconda.org/conda-forge/pyjwt)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyjwt/badges/downloads.svg)](https://anaconda.org/conda-forge/pyjwt)
 
 Installing pyjwt
 ================
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `pyjwt` available on your platform
 ```
 conda search pyjwt --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyjwt-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyjwt-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyjwt-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyjwt-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyjwt-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyjwt-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyjwt/badges/version.svg)](https://anaconda.org/conda-forge/pyjwt)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyjwt/badges/downloads.svg)](https://anaconda.org/conda-forge/pyjwt)
 
 
 Updating pyjwt-feedstock
