@@ -1,30 +1,30 @@
-{%set name = "pyjwt" %}
-{%set camelName = "PyJWT" %}
-{%set version = "1.4.0" %}
+{%set name = "PyJWT" %}
+{%set version = "1.4.2" %}
+{%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "e1b2386cfad541445b1d43e480b02ca37ec57259fd1a23e79415b57ba5d8a694" %}
+{%set hash_val = "87a831b7a3bfa8351511961469ed0462a769724d4da48a501cb8c96d1e17f570" %}
+{%set build_num = "0" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ camelName }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
   entry_points:
     - jwt = jwt.__main__:main
 
-  number: 0
+  number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
     - python
     - setuptools
-    - pytest-runner
 
   run:
     - python
@@ -39,9 +39,13 @@ test:
     - jwt --help
 
 about:
-  home: http://github.com/jpadilla/pyjwt
+  home: https://github.com/jpadilla/pyjwt
   license: MIT
+  license_family: MIT
+  license_file: LICENSE
   summary: 'JSON Web Token implementation in Python'
+  dev_url: https://github.com/jpadilla/pyjwt
+  doc_url: https://pyjwt.readthedocs.io/en/latest/
 
 extra:
   recipe-maintainers:
