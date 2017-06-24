@@ -18,7 +18,7 @@ build:
   entry_points:
     - jwt = jwt.__main__:main
 
-  number: {{ build_num }}
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
