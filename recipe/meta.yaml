@@ -29,9 +29,6 @@ requirements:
   run:
     - python
     - cryptography >=1.0
-    - flake8
-    - flake8-import-order
-    - pep8-naming
 
 test:
   imports:
