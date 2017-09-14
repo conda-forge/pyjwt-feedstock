@@ -14,9 +14,7 @@ Summary: JSON Web Token implementation in Python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyjwt-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyjwt-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyjwt-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyjwt-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyjwt-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyjwt-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pyjwt-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyjwt-feedstock)
 
 Current release info
 ====================
