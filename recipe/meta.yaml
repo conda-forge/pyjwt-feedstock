@@ -1,8 +1,8 @@
 {% set name = "PyJWT" %}
-{% set version = "1.5.2" %}
+{% set version = "1.5.3" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "1179f0bff86463b5308ee5f7aff1c350e1f38139d62a723e16fb2c557d1c795f" %}
+{% set hash = "500be75b17a63f70072416843dc80c8821109030be824f4d14758f114978bae7" %}
 {% set build = 0 %}
 
 package:
@@ -12,12 +12,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  {{ hash_type }}: {{ hash }}
 
 build:
+  noarch: python
   entry_points:
     - jwt = jwt.__main__:main
-
   number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
@@ -28,7 +28,7 @@ requirements:
 
   run:
     - python
-    - cryptography >=1.0
+    - cryptography >=1.4
     - flake8
     - flake8-import-order
     - pep8-naming
