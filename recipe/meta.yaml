@@ -38,7 +38,7 @@ test:
     - jwt.contrib.algorithms
 
   commands:
-    - jwt --help
+    - pyjwt --help
 
 about:
   home: https://github.com/jpadilla/pyjwt
