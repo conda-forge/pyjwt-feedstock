@@ -1,8 +1,8 @@
 {% set name = "PyJWT" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.3" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "dacba5786fe3bf1a0ae8673874e29f9ac497860955c501289c63b15d3daae63a" %}
+{% set hash = "c365c2c92063bdc609a9ef328958a910e249ffcad953895914b87e645412cf81" %}
 
 
 package:
@@ -11,21 +11,20 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
   noarch: python
   entry_points:
     - pyjwt = jwt.__main__:main
-
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
