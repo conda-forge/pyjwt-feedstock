@@ -14,12 +14,15 @@ Summary: JSON Web Token implementation in Python
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pyjwt-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyjwt-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pyjwt-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pyjwt-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyjwt/badges/version.svg)](https://anaconda.org/conda-forge/pyjwt)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyjwt/badges/downloads.svg)](https://anaconda.org/conda-forge/pyjwt)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyjwt-green.svg)](https://anaconda.org/conda-forge/pyjwt) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyjwt.svg)](https://anaconda.org/conda-forge/pyjwt) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyjwt.svg)](https://anaconda.org/conda-forge/pyjwt) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyjwt.svg)](https://anaconda.org/conda-forge/pyjwt) |
 
 Installing pyjwt
 ================
