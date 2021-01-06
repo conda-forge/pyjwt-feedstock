@@ -1,7 +1,5 @@
-{% set name = "PyJWT" %}
+{% set name = "pyjwt" %}
 {% set version = "2.0.0" %}
-{% set bundle = "tar.gz" %}
-{% set hash = "7a2b271c6dac2fda9e0c33d176c4253faba2c6c6b3a99c7f28a32c3c97522779" %}
 
 
 package:
@@ -9,33 +7,30 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  sha256: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyJWT-{{ version }}.tar.gz
+  sha256: 7a2b271c6dac2fda9e0c33d176c4253faba2c6c6b3a99c7f28a32c3c97522779
 
 build:
+  number: 0
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pyjwt = jwt.__main__:main
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
-
   run:
-    - python
-    - cryptography >=1.4
+    - python >=3.6
 
 test:
+  requires:
+    - pip
   imports:
     - jwt
-    - jwt.contrib
-    - jwt.contrib.algorithms
-
   commands:
+    - pip check
     - pyjwt --help
 
 about:
@@ -50,3 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - ocefpaf
