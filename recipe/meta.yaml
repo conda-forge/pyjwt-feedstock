@@ -14,8 +14,6 @@ build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  entry_points:
-    - pyjwt = jwt.__main__:main
 
 requirements:
   host:
@@ -31,7 +29,6 @@ test:
     - jwt
   commands:
     - pip check
-    - pyjwt --help
 
 about:
   home: https://github.com/jpadilla/pyjwt
