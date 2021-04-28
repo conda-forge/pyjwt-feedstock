@@ -1,5 +1,5 @@
 {% set name = "pyjwt" %}
-{% set version = "2.0.1" %}
+{% set version = "2.1.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyJWT-{{ version }}.tar.gz
-  sha256: a5c70a06e1f33d81ef25eecd50d50bd30e34de1ca8b2b9fa3fe0daaabcf69bf7
+  sha256: fba44e7898bbca160a2b2b501f492824fc8382485d3a6f11ba5d0c1937ce6130
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
