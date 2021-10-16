@@ -11,7 +11,7 @@ source:
   sha256: a0b9a3b4e5ca5517cac9f1a6e9cd30bf1aa80be74fcdf4e28eded582ecfcfbae
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,7 +22,8 @@ requirements:
   run:
     - python >=3.6
   run_constrained:
-    - cryptography >=3.3.1,<4.0.0
+    # Not a typo, cryptography jumped v3.4 -> v35
+    - cryptography >=3.3.1,<36
 
 test:
   requires:
