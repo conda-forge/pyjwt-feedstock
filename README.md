@@ -1,11 +1,11 @@
-About pyjwt
-===========
+About pyjwt-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyjwt-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jpadilla/pyjwt
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyjwt-feedstock/blob/main/LICENSE.txt)
 
 Summary: JSON Web Token implementation in Python
 
