@@ -149,4 +149,5 @@ Feedstock Maintainers
 
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
+* [@xylar](https://github.com/xylar/)
 
