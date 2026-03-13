@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyjwt
-  version: "2.12.0"
+  version: "2.11.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 2f62390b667cd8257de560b850bb5a883102a388829274147f1d724453f8fb02
+  sha256: 35f95c1f0fbe5d5ba6e43f00271c275f7a1a4db1dab27bf708073b75318ea623
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
