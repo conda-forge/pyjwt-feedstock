@@ -5,7 +5,7 @@
 
 [workspace]
 name = "pyjwt-feedstock"
-version = "3.56.2"  # conda-smithy version used to generate this file
+version = "3.56.3"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/pyjwt-feedstock"
 authors = ["@conda-forge/pyjwt"]
 channels = ["conda-forge"]
