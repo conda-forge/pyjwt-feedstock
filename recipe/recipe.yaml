@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyjwt
-  version: "2.13.0"
+  version: "2.14.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 41571c89ca91598c79e8ef18a2d07367d4810fbbd6f637794879baf1b7703423
+  sha256: 77283c83fb56ecf566a886c757a714bc83668e38156de2cce8263302f42e0b86
 
 build:
   number: 0
@@ -24,7 +24,6 @@ requirements:
     - setuptools >=77.0.3
   run:
     - python >=${{ python_min }}
-    - typing_extensions >=4.0
   run_constraints:
     - cryptography >=3.4.0
 
@@ -33,7 +32,9 @@ tests:
       imports:
         - jwt
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   license: MIT
