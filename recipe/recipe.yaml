@@ -24,8 +24,6 @@ requirements:
     - setuptools >=77.0.3
   run:
     - python >=${{ python_min }}
-  run_constraints:
-    - cryptography >=3.4.0
 
 tests:
   - python:
